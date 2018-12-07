@@ -1,7 +1,7 @@
 import * as popscale from "transforme-rs";
 
 
-var doc = {
+var old_doc = {
     "firstName": "Michael"
 };
 
@@ -15,4 +15,19 @@ var new_schema = {
 }
 
 
-console.log(popscale.transform(doc, new_schema));
+console.log(popscale.transform(old_doc, new_schema));
+
+
+var new_doc = {
+    "firstName": "Michael",
+    "lastName": "Nitschinger"
+};
+
+var old_schema = {
+    "firstName": {
+        "type": "string"
+    }
+}
+
+
+console.log(popscale.transform(new_doc, old_schema));
