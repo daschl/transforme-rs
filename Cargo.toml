@@ -2,6 +2,7 @@
 name = "transforme-rs"
 version = "0.1.0"
 authors = ["Michael Nitschinger <michael@nitschinger.at>"]
+edition = "2018"
 
 [lib]
 crate-type = ["cdylib", "rlib"]

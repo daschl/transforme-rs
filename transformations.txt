@@ -1,0 +1,5 @@
+"adding new fields":
+    new schema has such a field while the old schema does not:
+
+    * when going backwards, the new fields will just be ignored
+    * when going forwards, the new fields are initialized with their default values (or null?)
